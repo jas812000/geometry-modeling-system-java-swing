@@ -1,49 +1,49 @@
-# Java Object-Oriented Shapes GUI
+# Geometry Modeling System (Java Swing)
 
-A Java desktop application that demonstrates core object-oriented programming principles through a hierarchical system of two-dimensional and three-dimensional geometric shapes. The application uses a Swing-based graphical interface to construct shapes, collect user input, calculate areas or volumes, and visualize results.
+A Java desktop application that models two-dimensional and three-dimensional geometric shapes using a structured inheritance hierarchy. The system demonstrates abstraction, polymorphism, and enforced contracts through abstract base classes, with concrete implementations calculating areas or volumes. A Swing-based graphical interface coordinates user interaction, runtime object creation, and result visualization.
 
 ---
 
 ## Project Overview
 
-This project models geometric shapes using an inheritance-based class hierarchy rooted in a common `Shape` abstraction. Concrete shape classes implement dimension-specific behavior while sharing a consistent interface. A GUI-driven controller coordinates user interaction, input validation, computation, and visual feedback.
+The Geometry Modeling System is designed to demonstrate disciplined object-oriented design through a hierarchical model of geometric entities. The application supports both two-dimensional and three-dimensional geometry, enforcing correct behavior through abstract base classes while allowing concrete implementations to provide dimension-specific calculations.
 
-The application supports both 2D and 3D shapes, dynamically constructing objects at runtime based on user selections and displaying calculated results through dialog-driven workflows.
+User interaction is handled through a Swing-based graphical interface that guides input collection, confirms parameters, executes calculations, and displays results. The system emphasizes architectural clarity, correctness, and maintainability over UI complexity.
 
 ---
 
 ## Key Concepts Demonstrated
 
 - Object-oriented design using **inheritance**, **abstraction**, and **polymorphism**
-- Separation of concerns between:
-  - Domain models (shape classes)
-  - Abstract base classes
-  - GUI controller logic
-- Runtime object creation and method dispatch
-- Use of abstract methods (`getArea()`, `getVolume()`) enforced by design
-- Swing-based GUI development with event-driven control flow
+- Enforced behavioral contracts via abstract methods
+- Clear separation between domain models and UI control logic
+- Runtime object creation and dynamic method dispatch
+- Event-driven GUI workflows using Java Swing
 
 ---
 
-## Shape Hierarchy
+## Geometry Hierarchy
 
 ### Base Classes
-- `Shape`  
-  Defines dimensionality common to all shapes.
 
-- `TwoDimensional`  
-  Abstract class requiring implementation of `getArea()`.
+- **Shape**  
+  Defines shared properties common to all geometric entities, including dimensionality.
 
-- `ThreeDimensional`  
-  Abstract class requiring implementation of `getVolume()`.
+- **TwoDimensional (abstract)**  
+  Requires concrete subclasses to implement `getArea()`.
 
-### Implemented Shapes
+- **ThreeDimensional (abstract)**  
+  Requires concrete subclasses to implement `getVolume()`.
+
+### Implemented Geometry
 
 **Two-Dimensional**
 - Circle
 - Rectangle
 - Square
-- Triangle (supports multiple input strategies and classification)
+- Triangle  
+  - Supports multiple input strategies (base/height or three sides)
+  - Includes triangle classification and angle computation
 
 **Three-Dimensional**
 - Sphere
@@ -56,24 +56,26 @@ The application supports both 2D and 3D shapes, dynamically constructing objects
 
 ## GUI Application
 
-The main GUI (`ShapeApp`) provides:
-- A menu-driven interface for shape selection
-- Input dialogs tailored to each shape’s required parameters
-- Confirmation dialogs prior to computation
-- Calculated area or volume output
-- Optional image display corresponding to the selected shape
-- Controlled application exit with timestamped messaging
+The primary GUI controller coordinates all user interaction:
 
-All user interaction is handled through Swing components using event listeners and dialog-based workflows.
+1. Users select a geometry type from the main menu.
+2. Context-specific dialogs collect required parameters.
+3. Confirmation dialogs validate user input.
+4. Geometry objects are instantiated dynamically.
+5. Area or volume results are calculated and displayed.
+6. Corresponding images are displayed for visual reference.
+
+All mathematical computation is delegated to domain classes, preserving separation of concerns.
 
 ---
 
 ## Technologies Used
 
 - Java
-- Java Swing (GUI)
-- Object-Oriented Design
-- Event-driven programming
+- Java Swing
+- Object-Oriented Programming
+- Event-Driven Architecture
+- Desktop Application Development
 
 ---
 
@@ -81,8 +83,8 @@ All user interaction is handled through Swing components using event listeners a
 
 1. Compile all `.java` files.
 2. Run the `ShapeApp` class.
-3. When prompted, provide the folder path containing shape images.
-4. Interact with the GUI to construct shapes and view results.
+3. When prompted, provide the folder path containing geometry image assets.
+4. Use the GUI to construct geometry and view calculated results.
 
 ---
 
