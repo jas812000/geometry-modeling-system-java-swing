@@ -27,3 +27,9 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+### JetBrains IDE ###
+.idea/
+*.iml
+
+### Maven ###
+target/
