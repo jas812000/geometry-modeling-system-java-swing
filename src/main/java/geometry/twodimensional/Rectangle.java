@@ -1,3 +1,5 @@
+package geometry.twodimensional;
+
 /**
  * Represents a rectangle defined by its length and width.
  */

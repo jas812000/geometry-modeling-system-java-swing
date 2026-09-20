@@ -1,3 +1,8 @@
+package geometry;
+
+import geometry.threedimensional.ThreeDimensional;
+import geometry.twodimensional.TwoDimensional;
+
 /**
  * Base class for all geometric shapes in the application.
  *
@@ -42,7 +47,9 @@ public abstract class Shape {
 
         if (!Double.isFinite(value) || value <= 0) {
             throw new IllegalArgumentException(
-                    name + " must be a finite value greater than zero.");
+                    "Please enter a "
+                            + name.toLowerCase()
+                            + " greater than zero.");
         }
     }
 }

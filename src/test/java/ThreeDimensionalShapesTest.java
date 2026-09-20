@@ -1,3 +1,8 @@
+import geometry.threedimensional.Sphere;
+import geometry.threedimensional.Cube;
+import geometry.threedimensional.Cone;
+import geometry.threedimensional.Cylinder;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 

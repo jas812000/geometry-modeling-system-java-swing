@@ -1,3 +1,7 @@
+package geometry.twodimensional;
+
+import java.util.Arrays;
+
 /**
  * Represents a triangle defined either by a base and height or by three
  * side lengths.
@@ -166,7 +170,7 @@ public class Triangle extends TwoDimensional {
         }
 
         double[] sides = {sideA, sideB, sideC};
-        java.util.Arrays.sort(sides);
+        Arrays.sort(sides);
 
         double aSquared = Math.pow(sides[0], 2);
         double bSquared = Math.pow(sides[1], 2);

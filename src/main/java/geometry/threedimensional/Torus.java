@@ -1,3 +1,5 @@
+package geometry.threedimensional;
+
 /**
  * Represents a torus defined by its major and minor radii.
  *
@@ -26,7 +28,7 @@ public class Torus extends ThreeDimensional {
 
         if (majorRadius <= minorRadius) {
             throw new IllegalArgumentException(
-                    "Major radius must be greater than minor radius.");
+                    "The major radius must be greater than the minor radius.");
         }
 
         this.majorRadius = majorRadius;

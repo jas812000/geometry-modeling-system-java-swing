@@ -1,3 +1,5 @@
+package geometry.twodimensional;
+
 /**
  * Represents a square defined by the length of its sides.
  */

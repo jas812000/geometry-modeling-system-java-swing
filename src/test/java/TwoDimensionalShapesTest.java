@@ -1,3 +1,7 @@
+import geometry.twodimensional.Circle;
+import geometry.twodimensional.Rectangle;
+import geometry.twodimensional.Square;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 

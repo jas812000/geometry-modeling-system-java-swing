@@ -1,3 +1,13 @@
+import geometry.twodimensional.Circle;
+import geometry.twodimensional.Rectangle;
+import geometry.twodimensional.Square;
+import geometry.twodimensional.Triangle;
+import geometry.threedimensional.Sphere;
+import geometry.threedimensional.Cube;
+import geometry.threedimensional.Cone;
+import geometry.threedimensional.Cylinder;
+import geometry.threedimensional.Torus;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;

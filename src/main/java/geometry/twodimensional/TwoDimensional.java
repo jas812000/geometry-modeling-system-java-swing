@@ -1,3 +1,7 @@
+package geometry.twodimensional;
+
+import geometry.Shape;
+
 /**
  * Abstract base class for all two-dimensional shapes.
  *

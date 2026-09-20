@@ -1,3 +1,7 @@
+package geometry.threedimensional;
+
+import geometry.Shape;
+
 /**
  * Abstract base class for all three-dimensional shapes.
  *

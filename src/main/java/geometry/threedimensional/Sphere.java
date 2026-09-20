@@ -1,3 +1,5 @@
+package geometry.threedimensional;
+
 /**
  * Represents a sphere defined by its radius.
  */

@@ -1,3 +1,5 @@
+package geometry.threedimensional;
+
 /**
  * Represents a cube defined by the length of its sides.
  */
